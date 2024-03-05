@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 779px) {
+  body {
+    width: auto;
+    background-color: white;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 1.6rem;
+    color: #333;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*--ヘッダー--*/
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 1%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-left: 1%;
+    cursor: pointer;
+  }
+
+  .header h1:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+
+  /*--ヘッダー右上--*/
+  .btn {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+
+  /*送料*/
+  .ship {
+    font-size: 1.6rem;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .btn img {
+    cursor: pointer;
+  }
+
+  .btn img:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+
+  /*プラスマイナスボタン*/
+  .btn input {
+    display: none;
+  }
+
+  .btn label {
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    border: solid 0.2rem #333;
+    border-radius: 2rem;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .btn label:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+
+  .btn input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /*合計*/
+  .total {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  /*--グッズリスト(電卓部分)--*/
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item-item {
+    width: 33.33%;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .item-item:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .item-item:nth-of-type(even) {
+    background-color: #f0f0f0;
+  }
+
+  .item-img img {
+    width: 100%;
+    margin-bottom: -5%;
+  }
+
+  .item-name {
+    font-size: 1.4rem;
+  }
+  .item-unit {
+    display: flex;
+    font-size: 2.6rem;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  /*--欲しいものリスト--*/
+  summary {
+    background-color: #333;
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding: 3% 0%;
+    cursor: pointer;
+  }
+
+  summary:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+
+  .want-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .want-list h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-left: 2%;
+  }
+
+  /* 個数 - 個数×単価 */
+  .subtotal {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+
+  .qty {
+    width: 20%;
+    font-size: 2rem;
+  }
+
+  .price {
+    width: 20%;
+    font-size: 2rem;
+    margin-right: 20%;
+  }
+}
